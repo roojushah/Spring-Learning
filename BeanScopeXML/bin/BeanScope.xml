@@ -1,0 +1,20 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Student Bean -->
+	<!-- By default the Scope is Sigleton means Spring container creates one obj and
+	return only one obj...obj is cached in memory --> 
+	
+	<!-- prototype will create new object for each reference -->
+	
+	<bean id="student" class="com.Scope.Student" scope="prototype">
+		<property name="rollNo" value="1"></property>
+		<property name="name" value="Rooju Shah"></property>
+		<property name="marks" value="98"></property>
+	</bean>
+</beans>
